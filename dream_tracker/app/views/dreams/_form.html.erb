@@ -1,0 +1,12 @@
+<div class="dream_form">
+<div><%= form_for(@dream) do |f| %></div>
+	<div><%= f.label :subject %><%= f.text_field :subject %></div>
+	<div><%= f.label :description %><%= f.text_area :description %></div>
+	<div><%= f.label :good_dream %><%= f.check_box :good_dream %></div>
+	<div><%= f.label :recurring_dream %><%= f.check_box :recurring_dream %></div>
+	<div><%= f.label :emotions %><%= f.text_field :emotions %></div>
+	<div><%= f.label :vividness %><%= f.text_field :vividness %></div>
+	<div><%= f.label :image_url %><%= f.text_area :image_url %></div>
+	<div><%= f.submit %> </div>
+<% end %>
+</div>
