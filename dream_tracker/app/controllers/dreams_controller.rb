@@ -9,7 +9,9 @@ class DreamsController <ApplicationController
 	end
 
 	def create
+
 		@dream = Dream.new(dream_params)
+		
 		if @dream.save
 			redirect_to @dream
 		else
@@ -33,7 +35,7 @@ class DreamsController <ApplicationController
 
 	def destroy
 		@dream.destroy
-		redirect_to dream_url
+		redirect_to dreams_url
 	end
 	private
 	def set_dream
