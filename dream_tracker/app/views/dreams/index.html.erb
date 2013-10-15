@@ -1,0 +1,10 @@
+<div class="dreams">
+<% @dreams.each do |dream| %>
+	<h3> <%= dream.subject%> </h3>
+	<%= image_tag dream.image_url, height: '32', width: '32' %>
+	<%= link_to dream.subject, dream %>
+	Terror Level: <%= dream.emotions %>
+	<%= link_to "edit dream", edit_dream_path(dream) %>
+	<%= link_to "destroy dream", dream, method: :delete, data:{confirm: "are you sure?"} %>
+<% end %>
+</div>

@@ -4,6 +4,7 @@ class DreamsController <ApplicationController
 	def show
 	end
 	def index
+		@dreams = Dream.all
 	end
 	def create
 	end
