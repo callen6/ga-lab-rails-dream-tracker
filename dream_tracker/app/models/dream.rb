@@ -1,2 +1,2 @@
-class Dream < AvtiveRecord::Base
+class Dream < ActiveRecord::Base
 end
